@@ -42,7 +42,7 @@
       color: #ff6f00;
     }
     .hero {
-      background-image: url('https://cdn.pixabay.com/photo/2020/05/01/08/48/computer-5118076_1280.jpg');
+      background-image: url('https://images.unsplash.com/photo-1618164308663-303698a86e3a?auto=format&fit=crop&w=1350&q=80');
       background-size: cover;
       background-position: center;
       height: 80vh;
@@ -103,30 +103,6 @@
     .button:hover {
       background-color: #ffa726;
     }
-    form {
-      background-color: #1e1e1e;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(255, 111, 0, 0.2);
-    }
-    form input, form textarea {
-      width: 100%;
-      padding: 10px;
-      margin: 10px 0;
-      border: 1px solid #444;
-      border-radius: 5px;
-      background: #2c2c2c;
-      color: #f4f4f4;
-    }
-    form input[type="submit"] {
-      background-color: #ff6f00;
-      color: #000;
-      cursor: pointer;
-      font-weight: bold;
-    }
-    form input[type="submit"]:hover {
-      background-color: #ffa726;
-    }
     footer {
       background-color: #111;
       text-align: center;
@@ -134,8 +110,26 @@
       color: #aaa;
       border-top: 2px solid #ff6f00;
     }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+    }
+    form button {
+      background-color: #ff6f00;
+      border: none;
+      padding: 10px 20px;
+      color: black;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    form button:hover {
+      background-color: #ffa726;
+    }
   </style>
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
   <header>
@@ -156,7 +150,7 @@
     <h2>🔥 Top Performing Builds</h2>
     <div class="builds">
       <div class="card">
-        <img src="https://cdn.pixabay.com/photo/2022/02/13/08/06/pc-7010137_1280.jpg" alt="Gaming PC">
+        <img src="https://images.unsplash.com/photo-1618164308663-303698a86e3a?auto=format&fit=crop&w=800&q=80" alt="Gaming PC">
         <div class="card-content">
           <h3>Ryzen 5 + RTX 3060</h3>
           <p>Powerful 1080p/1440p gaming setup. Great for streamers and content creators.</p>
@@ -164,7 +158,7 @@
         </div>
       </div>
       <div class="card">
-        <img src="https://cdn.pixabay.com/photo/2021/03/10/22/38/computer-6084417_1280.jpg" alt="Budget PC">
+        <img src="https://images.unsplash.com/photo-1610375225763-0ef2d2f851c6?auto=format&fit=crop&w=800&q=80" alt="Budget PC">
         <div class="card-content">
           <h3>Intel i5 + GTX 1650</h3>
           <p>Budget-friendly build for entry-level gaming and editing tasks.</p>
@@ -172,7 +166,7 @@
         </div>
       </div>
       <div class="card">
-        <img src="https://cdn.pixabay.com/photo/2020/11/15/15/19/computer-5744250_1280.jpg" alt="Editing Beast">
+        <img src="https://images.unsplash.com/photo-1625772452854-020bc3f6cf47?auto=format&fit=crop&w=800&q=80" alt="Editing Beast">
         <div class="card-content">
           <h3>Threadripper Workstation</h3>
           <p>Ultimate performance for 4K editing, rendering and productivity.</p>
@@ -185,31 +179,29 @@
   <section id="gallery">
     <h2>📸 Customer Builds Gallery</h2>
     <div class="gallery">
-      <img src="https://cdn.pixabay.com/photo/2021/02/09/09/12/gaming-5997685_1280.jpg" alt="Custom PC 1">
-      <img src="https://cdn.pixabay.com/photo/2021/11/06/08/06/gaming-pc-6773560_1280.jpg" alt="Custom PC 2">
-      <img src="https://cdn.pixabay.com/photo/2022/01/07/15/11/computer-6921281_1280.jpg" alt="Custom PC 3">
+      <img src="https://images.unsplash.com/photo-1630997598040-d0ff13fd40a4?auto=format&fit=crop&w=800&q=80" alt="Custom PC 1">
+      <img src="https://images.unsplash.com/photo-1630595912451-d8a75ac9c99c?auto=format&fit=crop&w=800&q=80" alt="Custom PC 2">
+      <img src="https://images.unsplash.com/photo-1606813902930-3a91376b87db?auto=format&fit=crop&w=800&q=80" alt="Custom PC 3">
     </div>
   </section>
 
   <section id="quote">
     <h2>💬 Get Your Custom Quote</h2>
+    <p>Fill out the form below with your budget and use-case. We'll contact you ASAP!</p>
     <form action="https://formspree.io/f/yourformid" method="POST">
-      <label for="email">Email Address:</label>
-      <input type="email" id="email" name="email" required>
-
-      <label for="message">Your Requirements:</label>
-      <textarea id="message" name="message" rows="5" required></textarea>
-
-      <div class="g-recaptcha" data-sitekey="your-site-key"></div>
-
-      <input type="submit" value="Submit">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your requirements..." required></textarea>
+      <input type="text" name="honeypot" style="display:none">
+      <button type="submit">Send</button>
     </form>
   </section>
 
   <section id="contact">
     <h2>📞 Contact Us</h2>
     <p><strong>📍 Location:</strong> Kadapa, Andhra Pradesh<br>
-    <strong>📷 Instagram:</strong> <a style="color:#ffa726" href="https://instagram.com/desibuilds">@desibuilds</a></p>
+    <strong>📧 Email:</strong> contact@desibuilds.in<br>
+    <strong>📷 Instagram:</strong> <a style="color:#ffa726" href="https://instagram.com/desibuildsofficial">@desibuilds</a></p>
   </section>
 
   <footer>

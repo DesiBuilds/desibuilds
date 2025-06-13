@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DesiBuilds™ | Custom PC Builders</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #0e0e0e;
+      color: #f4f4f4;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #111;
+      padding: 30px 20px;
+      text-align: center;
+      border-bottom: 2px solid #ff6f00;
+    }
+    header h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 3rem;
+      color: #ff6f00;
+    }
+    nav {
+      margin-top: 15px;
+    }
+    nav a {
+      margin: 0 15px;
+      color: #f4f4f4;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ff6f00;
+    }
+    .hero {
+      background-image: url('https://images.unsplash.com/photo-1587202372775-9892b3f9c675');
+      background-size: cover;
+      background-position: center;
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .hero h2 {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      font-size: 2.5rem;
+      color: #fff;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    section h2 {
+      color: #ff6f00;
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+    .builds, .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #1e1e1e;
+      border: 1px solid #333;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(255, 111, 0, 0.2);
+    }
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 15px;
+    }
+    .card-content h3 {
+      margin-bottom: 10px;
+      color: #ff9800;
+    }
+    .button {
+      display: inline-block;
+      background-color: #ff6f00;
+      color: #000;
+      padding: 12px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-top: 15px;
+    }
+    .button:hover {
+      background-color: #ffa726;
+    }
+    footer {
+      background-color: #111;
+      text-align: center;
+      padding: 20px;
+      color: #aaa;
+      border-top: 2px solid #ff6f00;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>DesiBuilds™</h1>
+    <nav>
+      <a href="#builds">Builds</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#quote">Quote</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Custom PCs Tailored to Your Gaming & Editing Needs</h2>
+  </section>
+
+  <section id="builds">
+    <h2>🔥 Top Performing Builds</h2>
+    <div class="builds">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1593642634315-48f5414c3ad9" alt="Gaming PC">
+        <div class="card-content">
+          <h3>Ryzen 5 + RTX 3060</h3>
+          <p>Powerful 1080p/1440p gaming setup. Great for streamers and content creators.</p>
+          <p><strong>₹85,000</strong></p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1612287274181-bd71b4fc88f3" alt="Budget PC">
+        <div class="card-content">
+          <h3>Intel i5 + GTX 1650</h3>
+          <p>Budget-friendly build for entry-level gaming and editing tasks.</p>
+          <p><strong>₹55,000</strong></p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1609943243873-5fc9297c28c8" alt="Editing Beast">
+        <div class="card-content">
+          <h3>Threadripper Workstation</h3>
+          <p>Ultimate performance for 4K editing, rendering and productivity.</p>
+          <p><strong>₹1,75,000</strong></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <h2>📸 Customer Builds Gallery</h2>
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1616627781913-9c6b997a9f4d" alt="PC Build 1">
+      <img src="https://images.unsplash.com/photo-1587206661826-2d3f1ebfe6b3" alt="PC Build 2">
+      <img src="https://images.unsplash.com/photo-1603791452906-cb8a0b0087c9" alt="PC Build 3">
+    </div>
+  </section>
+
+  <section id="quote">
+    <h2>💬 Get Your Custom Quote</h2>
+    <p>Tell us your budget and needs on WhatsApp — we'll craft the perfect PC for you!</p>
+    <a class="button" href="https://wa.me/91XXXXXXXXXX?text=Hi%20DesiBuilds%2C%20I%20want%20a%20custom%20PC">Get a Quote</a>
+  </section>
+
+  <section id="contact">
+    <h2>📞 Contact Us</h2>
+    <p><strong>📍 Location:</strong> Kadapa, Andhra Pradesh<br>
+    <strong>📱 WhatsApp:</strong> +91-XXXXXXXXXX<br>
+    <strong>📷 Instagram:</strong> <a style="color:#ffa726" href="https://instagram.com/desibuilds">@desibuilds</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 DesiBuilds™ – Built by PC Enthusiasts for Gamers & Creators.</p>
+  </footer>
+</body>
+</html>
